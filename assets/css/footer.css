@@ -1,0 +1,18 @@
+/*
+ * Estilos para el Pie de Página (footer.css)
+ * (Este archivo no tiene cambios)
+ */
+
+.site-footer {
+    /* bg-dark de Bootstrap es #212529. 
+       Lo ponemos un poco más oscuro para diferenciarlo */
+    background-color: #1a1e21 !important; 
+    border-top: 3px solid #0d6efd; /* Un borde azul (primario de Bootstrap) */
+}
+
+/* Efecto hover para los íconos de redes sociales */
+.site-footer .bi:hover {
+    color: #0d6efd !important; /* Color azul al pasar el mouse */
+    transform: scale(1.2); /* Un poco más grandes */
+    transition: all 0.2s ease-in-out;
+}

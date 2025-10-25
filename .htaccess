@@ -1,0 +1,13 @@
+# Protección básica
+Options -Indexes
+
+# Proteger archivos sensibles
+<FilesMatch "\.(?:env|log|ini|conf)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Forzar HTTPS (descomentar en producción)
+# RewriteEngine On
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

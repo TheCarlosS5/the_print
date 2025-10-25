@@ -1,0 +1,20 @@
+/*
+ * Estilos para el Navegador (nav.css)
+ */
+
+/*
+ * CAMBIO: Ya no necesitamos la clase .navbar-logo,
+ * así que la hemos quitado.
+*/
+
+/* Ajustamos el padding de la barra de navegación */
+.main-nav .container-fluid {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+/* Estilos para el nombre de la empresa "THE PRINT" */
+.main-nav .navbar-brand {
+    font-weight: bold;
+    letter-spacing: 1px;
+}

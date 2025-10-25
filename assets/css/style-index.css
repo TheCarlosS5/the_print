@@ -1,0 +1,46 @@
+/*
+ * Estilos para la página de Inicio (style-index.css)
+ */
+
+/* ======== BANNER ======== */
+.hero-banner {
+    /*
+     * CAMBIO IMPORTANTE:
+     * 1. Usamos tu imagen 'logo.png' como fondo.
+     * 2. Añadimos un degradado oscuro (linear-gradient) encima
+     * para que el texto blanco del banner sea legible.
+     * Si tu banner ya es oscuro, puedes quitar el linear-gradient.
+    */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/logo.png');
+    
+    /* 3. Nos aseguramos de que cubra todo el espacio */
+    background-size: cover;
+    
+    /* 4. Centramos la imagen */
+    background-position: center center;
+}
+
+/* ======== CATEGORÍAS ======== */
+#categorias .category-card {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+}
+
+#categorias .category-card:hover {
+    transform: translateY(-5px); /* Se levanta un poco */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Sombra más pronunciada */
+}
+
+/* Estilos para las imágenes de las categorías */
+#categorias .category-card .card-img-top {
+    width: 100%;
+    height: 200px; /* Dales una altura fija */
+    object-fit: contain; /* 'contain' es mejor para productos */
+    padding: 10px; /* Un poco de aire alrededor de la imagen */
+}
+
+#categorias .category-card .card-title {
+    color: #333;
+    font-weight: 600;
+}
